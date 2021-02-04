@@ -144,7 +144,7 @@ export default class SearchableDropDown extends Component {
             :
               <Text style={{ ...this.props.itemTextStyle }}>{item.name}</Text>
           }
-        </TouchableOpacity>
+        </TouchableHighlight>
       );
     }
   };
