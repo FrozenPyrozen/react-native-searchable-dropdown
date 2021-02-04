@@ -5,7 +5,8 @@ import {
   TextInput,
   View,
   TouchableOpacity,
-  Keyboard
+  Keyboard,
+  TouchableHighlight,
 } from 'react-native';
 
 const defaultItemValue = {
@@ -121,7 +122,8 @@ export default class SearchableDropDown extends Component {
       )
     } else {
       return (
-        <TouchableOpacity
+        <TouchableHighlight
+          underlayColor={this.props.underlayColor}
           style={{ ...this.props.itemStyle }}
           onPress={() => {
             this.setState({ item: item, focus: false });
